@@ -1,10 +1,8 @@
 echo "Enter note:"
 read hello
-echo "Enter any number:"
+echo "Enter any number"
 read int
 cat << EOF >> file.txt
-Enter note: $hello
-Enter int: $int
-Time: $(date "+%Y-%m-%d-%H:%M:%S")
+$(date "+%Y-%m-%d-%H:%M:%S") $hello $int
 EOF
 cat file.txt
