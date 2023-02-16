@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Введите имя файла"
 read file
-#if ! [ -f ~/Desktop/Scripts ]; then
-#	echo "No file"
 if [ -f $file ]; then
 	echo "Файл существует. Удалить? да/нет."
 	read answer1
