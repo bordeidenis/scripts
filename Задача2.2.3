@@ -8,7 +8,7 @@ if [[ $(date +"%H:%M") == "09:55" ]]; then
     touch $log
 
 fi
-(crontab -l 2>/dev/null; echo "55 9 * * * /path/to/script.sh") | crontab -
+(crontab -l 2>/dev/null; echo "55 9 * * * /path/to/Задача2.2.3.sh") | crontab -
 # у меня эта команда не работала при запуске скрипта, поэтому я добавлял ее вручную через консоль
 
 log_errors=$(date '+%Y-%m-%d').log
